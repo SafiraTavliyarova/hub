@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    font-family: 'Macondo', cursive;
+    margin: 0;
+}
+
+.main-container {
+    background-image: linear-gradient(rgb(250, 250, 156), rgb(160, 202, 234));
+    text-align: center;
+    height: 100vh;
+
+}
+
+.main-header {
+    transform: translateY(250px);
+}
+
+.my {
+    animation-name: my;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    display: inline-block;
+}
+
+
+.games {
+    animation-name: my;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    display: inline-block;
+    animation-delay: 2s;
+}
+
+.hub {
+    animation-name: my;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    display: inline-block;
+    animation-delay: 3s;
+}
+
+
+
+
+@keyframes my {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(25px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    75% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.main-btn {
+    display: inline-block;
+    transform: translateY(400px);
+    transition: all 1s ease-in;
+}
+
+.main-btn:hover {
+    transform: translateY(400px) scale(2) rotateY(180deg);
+}
